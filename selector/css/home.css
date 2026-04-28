@@ -1,0 +1,23 @@
+/* ul 태그 밑의 li 모두 */
+ul li{
+  color: tomato;
+}
+
+/* ol 모두 다 blue -> id로 만들어줌*/
+/* ol>li{
+  color: blue;
+} */
+
+/* #beverage>li{
+  color: brown;
+} */
+
+
+.beverage{
+  color: blue;
+}
+
+/* 콜라만 색 바꾸기*/
+#cola li{
+  color: black;
+}
