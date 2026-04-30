@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 8000px;
+      }
+
+      header {
+        border-bottom: 1px solid gray;
+      }
+      footer {
+        border-top: 1px solid gray;
+      }
+      nav {
+        border-right: 1px solid gray;
+      }
+      aside {
+        border-left: 1px solid gray;
+      }
+
+      nav,
+      aside {
+        /* 너비 고정 */
+        flex-basis: 150px;
+        /* 다른 놈 희생 */
+        flex-shrink: 0;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      main {
+        text-align: justify;
+        padding: 10px;
+        column-count: 4;
+        column-width: 200px;
+        column-gap: 20px;
+        column-rule-color: red;
+        column-rule-style: solid;
+        column-rule-width: 5px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Holy Grail Layout</h1>
+      </header>
+      <section class="content">
+        <nav>
+          <ul>
+            <li>main</li>
+            <li>about</li>
+            <li>help</li>
+          </ul>
+        </nav>
+        <main>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga
+            commodi velit laborum facere iusto reiciendis ipsam non soluta esse
+            consequatur cupiditate dicta perferendis, eveniet sapiente
+            laboriosam illo inventore qui? Quo voluptate ad laudantium. Amet
+            modi hic, placeat quasi facere quod ut aspernatur quaerat facilis
+            mollitia veritatis nihil quo. Provident quos, ullam non suscipit
+            nostrum repellat fugit assumenda explicabo, ab voluptatum voluptate
+            in ratione repellendus asperiores cum accusamus iusto cumque minima
+            labore beatae facilis tempore ipsum voluptates? Magnam ex quo
+            cupiditate unde enim labore ducimus dolorem autem possimus. Optio
+            obcaecati, non et sed rem placeat magnam aperiam quaerat, nostrum
+            vitae cum doloremque, cumque voluptas. Praesentium cum sapiente id
+            molestiae aspernatur laboriosam omnis deserunt consectetur eum
+            sequi! Rem optio laudantium neque ab non eligendi saepe. Facere
+            architecto alias ipsam animi adipisci laborum deleniti cupiditate
+            sit laboriosam dicta sint doloremque ea neque error magnam deserunt
+            consequatur possimus at, laudantium, magni quo quas esse vel
+            similique. Autem quibusdam ipsum veritatis suscipit est minus
+            praesentium ex odio eligendi deleniti debitis nulla, facere,
+            cupiditate reiciendis optio? Beatae rerum dolores harum molestias
+            vero at atque a cupiditate illo nemo repellat vitae, deserunt nisi
+            incidunt. Atque impedit pariatur assumenda deleniti provident nihil,
+            voluptas perspiciatis unde, omnis corporis eos at. Assumenda in eos
+            quaerat! Eveniet aperiam doloribus sapiente, hic porro unde fugiat
+            nihil iure ipsam distinctio architecto qui debitis omnis amet harum
+            quos ex numquam at quis dolorem perferendis quasi minima. Officiis
+            fugiat neque dicta architecto hic, animi aliquam ad reprehenderit
+            nobis cupiditate nihil possimus maiores nisi odit nostrum magni
+            voluptates suscipit quaerat ea obcaecati accusamus. Obcaecati
+            accusamus tempora itaque amet ducimus quae nobis voluptatem odit
+            unde impedit nesciunt dolorum aliquam, omnis corrupti nostrum
+            doloribus praesentium est exercitationem, culpa minima. Similique,
+            quisquam unde. Consequatur minus culpa odio laborum cumque illo,
+            explicabo dignissimos aliquam, consectetur ab nam, odit quae earum!
+          </p>
+        </main>
+        <aside>AD (광고)</aside>
+      </section>
+      <footer>
+        <a href="www.naver.com">홈페이지</a>
+      </footer>
+    </div>
+  </body>
+</html>
